@@ -4,14 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>USF Class Schedule Search</title>
 </head>
 <body>
+    <div class="header">
+        <h1>Class Schedule Search</h1>
+    </div>
     <div class="filter-menu">
-        
+        <form action="">
+            <div class="Campus">
+                <h2>Campus</h2>
+                <input type="radio" name="campus" id=""><label for="campus">Tampa</label><br>
+                <input type="radio" name="campus" id=""><label for="campus">St. Petersburg</label><br>
+                <input type="radio" name="campus" id=""><label for="campus">Sarasota Manatee</label>
+            </div>
+            <div class="Courselevel">
+                <h2>Course Level</h2>
+                <input type="radio" name="courselevel" id=""><label for="courselevel">Undergraduate</label><br>
+                <input type="radio" name="courselevel" id=""><label for="courselevel">Graduate</label>
+            </div>
+            <div class="method">
+                <h2>Instruction Method</h2>
+                <input type="checkbox" name="method" id=""><label for="method">In-Person</label><br>
+                <input type="checkbox" name="method" id=""><label for="method">Virtual</label><br>
+                <input type="checkbox" name="method" id=""><label for="method">Hybrid</label>
+            </div>
+            <div class="days">
+                <h2>Days of the week</h2>
+                <input type="checkbox" name="days" id=""><label for="days">Monday</label><br>
+                <input type="checkbox" name="days" id=""><label for="days">Tuesday</label><br>
+                <input type="checkbox" name="days" id=""><label for="days">Wednesday</label><br>
+                <input type="checkbox" name="days" id=""><label for="days">Thursday</label><br>
+                <input type="checkbox" name="days" id=""><label for="days">Friday</label>
+            </div>
+            <div class="time">
+                <h2>Time of the day</h2>
+                <input type="checkbox" name="time" id=""><label for="time">Morning</label><br>
+                <input type="checkbox" name="time" id=""><label for="time">Aftrnoon</label><br>
+                <input type="checkbox" name="time" id=""><label for="time">Evening</label>
+            </div>
+            <input type="submit" value="Apply">
+        </form>
     </div>
     <div class="main">
-        <div class="card">
+        <!-- <div class="card">
             <h2>Class Name</h2>
             <h2>CLS CODE - 007</h2>
             <h3>Instructor</h3>
@@ -21,11 +57,51 @@
                 <li>Days</li>
             </ul>
             <button>Add Class</button>
+        </div> -->
+        <section class="class m T H">
+            <div class="coursenumber"><h4>AFH-3200 002<button class="Info">i</button></h4></div>
+            <h2>African History since 1850</h2>
+            <h3>Edward Kissi</h3>
+                <p><b>Location:</b> TBA</p>
+                <p><b>Time:</b> 11:00am-12:15pm</p>
+                <p><b>Days:</b> Tuesday and Thursday</p>
+                <button class="AddClass">+ Add Class</button>
+        </section>
+
+        <section class="class m T H">
+            <div class="coursenumber"><h4>CCJ-3024 001<button class="Info">i</button></h4></div>
+            <h2>Survey Criminal Justice System</h2>
+            <h3>Amber F. Oderinde</h3>
+                <p><b>Location:</b> SOC 149</p>
+                <p><b>Time:</b> 9:30am-10:45am</p>
+                <p><b>Days:</b> Tuesday and Thursday</p>
+                <button class="AddClass">+ Add Class</button>
+        </section>
+
+        <section class="class a M W">
+            <div class="coursenumber"><h4>EGN-3000L 002<button class="Info">i</button></h4></div>
+            <h2>Foundations of Engineering Lab</h2>
+            <h3>Rudiger Schlaf</h3>
+                <p> <b>Location:</b> EDU 115</p>
+                <p> <b>Time:</b> 12:30pm-1:45pm</p>
+                <p> <b>Days:</b> Monday and Wednesday</p>
+                <button class="AddClass">+ Add Class</button>
+        </section>
+    </div>
+    <div class="UserCol">
+        <div class="class selected sheet">
+            <button class="class-popup">^</button>
+            <ul>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    Class #1
+                    <button>X</button>
+                </li>
+            </ul>
+            <a href="/finalize"></a>
         </div>
     </div>
-    <div class="class-popup">
-
-    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
 
