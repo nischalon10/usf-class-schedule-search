@@ -1,4 +1,94 @@
 body{
     margin: 0;
+    font-family: sans-serif;
 }
 
+.filter-menu{
+    display: flex;
+    margin-top: 7vh;
+    margin-left: 1vw;
+    background-color: #CFC493;
+    padding-left: 2em ;
+    padding-right: 2em ;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    border-radius: 1em;
+}
+.main{
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 4em;
+}
+
+.class{
+    margin:.5em ;
+    background-color: #CAD2D8;
+    padding: 1em;
+    border: .1em solid black;
+    border-radius: 2em;
+    width: 50vw;
+}
+
+.UserCol{
+    margin-left: 80vw;
+}
+
+.fixed{
+    position:fixed;
+}
+
+.title{
+    margin-left: 25vw;
+    z-index: 1;
+    
+}
+
+.header{
+    background-color: white;
+
+
+}
+
+button{
+    /* -webkit-appearance: none; */
+    border-radius: 50vh;
+    padding: .3em;
+    /* /* border: 1px solid black; */
+    background-color: #7E96A0; */
+
+}
+
+input[type="submit"]{
+    -webkit-appearance: none;
+    border: none;
+    background-color: #006747;
+    color: white;
+    padding: .7em;
+    font-weight: bolder;
+    margin-top: 1em;
+}
+
+.sheet{
+    margin-right: 2em;
+
+}
+
+.class-popup{
+    padding: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-left: 5vw;
+    border: none;
+}
+
+img{
+    width: 15vw;
+    position: fixed;
+}
+
+.Info{
+    padding: .5em;
+    background-color: black;
+    color: white;
+    display: flex;
+}

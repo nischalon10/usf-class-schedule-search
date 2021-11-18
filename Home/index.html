@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USF Class Schedule Search</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="header">
-        <h1>Class Schedule Search</h1>
+        <h1 class="title fixed">Class Schedule Search</h1>
+        <div class="img"></div>
+        <img src="./USouthFlorida-green.png" alt="">
     </div>
-    <div class="filter-menu">
+    <div class="filter-menu fixed">
         <form action="">
             <div class="Campus">
-                <h2>Campus</h2>
+                <h3>Campus</h3>
                 <input type="radio" name="campus" id=""><label for="campus">Tampa</label><br>
                 <input type="radio" name="campus" id=""><label for="campus">St. Petersburg</label><br>
                 <input type="radio" name="campus" id=""><label for="campus">Sarasota Manatee</label>
             </div>
             <div class="Courselevel">
-                <h2>Course Level</h2>
+                <h3>Course Level</h3>
                 <input type="radio" name="courselevel" id=""><label for="courselevel">Undergraduate</label><br>
                 <input type="radio" name="courselevel" id=""><label for="courselevel">Graduate</label>
             </div>
             <div class="method">
-                <h2>Instruction Method</h2>
+                <h3>Instruction Method</h3>
                 <input type="checkbox" name="method" id=""><label for="method">In-Person</label><br>
                 <input type="checkbox" name="method" id=""><label for="method">Virtual</label><br>
                 <input type="checkbox" name="method" id=""><label for="method">Hybrid</label>
             </div>
             <div class="days">
-                <h2>Days of the week</h2>
+                <h3>Days of the week</h3>
                 <input type="checkbox" name="days" id=""><label for="days">Monday</label><br>
                 <input type="checkbox" name="days" id=""><label for="days">Tuesday</label><br>
                 <input type="checkbox" name="days" id=""><label for="days">Wednesday</label><br>
@@ -38,7 +41,7 @@
                 <input type="checkbox" name="days" id=""><label for="days">Friday</label>
             </div>
             <div class="time">
-                <h2>Time of the day</h2>
+                <h3>Time of the day</h3>
                 <input type="checkbox" name="time" id=""><label for="time">Morning</label><br>
                 <input type="checkbox" name="time" id=""><label for="time">Aftrnoon</label><br>
                 <input type="checkbox" name="time" id=""><label for="time">Evening</label>
@@ -88,13 +91,14 @@
                 <button class="AddClass">+ Add Class</button>
         </section>
     </div>
-    <div class="UserCol">
+    <div class="UserCol fixed">
+        <iframe src="https://calendar.google.com/calendar/embed?height=250&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&showCalendars=0&showTz=0&showPrint=0&showNav=1&showTitle=0&title=USF%20Schedule%20Calendar&showDate=1&showTabs=0&src=bGFoN2YwbTV2bjdobnN1YmQ4a2R1MXFkY2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%230B8043&color=%23F6BF26" style="border:solid 1px #777" width="250" height="250" frameborder="0" scrolling="no"></iframe>
         <div class="class selected sheet">
             <button class="class-popup">^</button>
             <ul>
                 <li>
                     <input type="checkbox" name="" id="">
-                    Class #1
+                    AFH-3200 002
                     <button>X</button>
                 </li>
             </ul>
